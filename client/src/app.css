@@ -1,0 +1,280 @@
+.card {
+  height : 250px; 
+  width:  250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+    white-space: normal;
+    word-break:break-all;
+    overflow-y: auto;
+  }
+  .deleteicon{ 
+    background-color : tomato; 
+  }
+  
+  label {
+    width: max-content;
+  color: tomato;
+  font-size: 14px;
+  border-bottom: 1.7px solid tomato;
+ margin : 2px; 
+ font-family:'Courier New', Courier, monospace;
+ font-style: oblique;
+ font-weight:bolder;
+  }
+  .place{ 
+  font-size: 16px;
+  margin : 2px; 
+  font-weight:bold;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .desc {
+    font-size: 14px;
+    margin : 2px; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+  }
+ .stars{ 
+   color : greenyellow;
+ }
+  
+  .username {
+    font-size: 14px;
+  }
+  form {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(88, 87, 87);
+  }
+  
+  input {
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 12px;
+    color: rgb(185, 184, 184);
+  }
+  
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+  }
+  
+  textarea {
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  .swal-wide{
+    width:250px;
+    height : 280px; 
+    
+}
+  .submitButton {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: tomato;
+    cursor: pointer;
+  }
+  .buttons,
+.logout {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.button {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 500;
+}
+
+.button:focus{
+  outline: none;
+}
+
+.logout{
+  background-color: tomato;
+  height : 40px; 
+  width : 70px; 
+  padding : 10px; 
+}
+
+.login{
+  background-color: teal;
+  right: 120px;
+  width : 70px; 
+  height : 40px; 
+  padding: 15px;
+}
+.login:hover{ 
+  background-color: rgb(148, 107, 107)
+}
+.register{
+  background-color: slateblue;
+  right: 20px;
+  width : 80px; 
+  height : 40px; 
+  padding: 15px;
+}
+.register:hover{ 
+  background-color: rgb(148, 107, 107)
+}
+.loginContainer {
+  width: 23%;
+  height: 36%;
+  padding: 50px;
+  border-radius: 20px;
+ 
+  background-color: white;
+  position:relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+    margin:auto;
+    margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 800;
+  cursor:auto;
+ 
+}
+
+.loginCancel {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  cursor: pointer;
+  padding :20px; 
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: teal;
+  font-weight: 800;
+  font-size: 25px;
+  margin-right: 30px;
+ 
+  font-family: Georgia, serif;
+}
+.logoIcon { 
+  transform: scale(1.4);
+  padding : 10px; 
+}
+.form { 
+  width : 90%; 
+  margin: 20px;
+}
+.input { 
+
+  font-size: 17px;  
+}
+.loginBtn {
+  border: none;
+  padding: 8px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+  height:35px; 
+  width: auto;
+  margin-bottom : -10px; 
+}
+.loginBtn:hover {
+  border: none;
+  padding: 8px;
+  background-color: rgb(118, 133, 133);
+  color: white;
+  cursor: pointer;
+  height:35px; 
+  width: auto;
+}
+
+.failure {
+  font-size: 12px;
+  color: red;
+  text-align: center;
+  margin-top:20px; 
+}
+.registerContainer {
+  width: 23%;
+  height: 38%;
+  padding: 50px;
+  border-radius: 20px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 500;
+  cursor:auto;
+}
+
+.registerCancel {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  cursor: pointer;
+  padding :20px; 
+}
+
+.logoR {
+  color: slateblue;
+  width: 20%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 25px;
+  margin-right: 30px;
+  font-family: Georgia, serif;
+}
+
+.registerBtn {
+  background-color: slateblue;
+ border: none;
+  padding: 10px;
+   color: white;
+  cursor: pointer;
+  height:35px; 
+  width: auto;
+  margin-bottom: -25px;
+}
+
+.registerBtn:hover{ 
+  background-color: rgb(169, 162, 209);
+}
+.success {
+  font-size: 12px;
+  color: green;
+  text-align: center;
+  margin-top:20px; 
+}
+
